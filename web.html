@@ -1,79 +1,137 @@
 <!-- Zander Black -->
 <!-- Web Development 20s -->
 <!-- Ms.Hotink -->
-<!-- Pembina Trails Colliegete (PTC) -->
-
+<!-- Pembina Trails Collegiate (PTC) -->
+<!-- Date Last Modified: 09/24/2024 -->
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
+    <meta charset="utf-8" /> <!-- Set character encoding for the document -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" /> <!-- Responsive design settings -->
+    <title>Fishy Time</title> <!-- Title displayed in the browser tab -->
     <style>
-    table,
-    th,
-    td {
-      border: 1px solid rgb(0, 51, 67);
-      border-collapse: collapse;
-    }
+        /* General styling for tables */
+        table,
+        th,
+        td {
+            border: 1px solid rgb(0, 51, 67); /* Border color for table elements */
+            border-collapse: collapse; /* Merge table borders */
+        }
 
-    th,
-    td {
-      background-color: rgb(52, 131, 168);
-    }
-  </style>
+        /* Background color for table headers and cells */
+        th,
+        td {
+            background-color: rgb(52, 131, 168); /* Light blue background for table cells */
+        }
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
-    <title>Fishy Time</title>
-  </head>
+        /* Styling for the title section */
+        .Title {
+            background-color: rgb(222, 222, 222); /* Light gray background for the title */
+            text-align: center; /* Center the title text */
+            margin: 0%; /* Remove margin */
+        }
 
-  <body style="background-color: rgb(172, 172, 172);">
-    <h1 style="text-align: center;">Fishy Time</h1>
+        /* Styling for main content and footer sections */
+        .Other {
+            background-color: rgb(6, 61, 95); /* Dark blue background */
+            text-align: center; /* Center text */
+            margin: 0%; /* Remove margin */
+        }
 
+        .Other1 {
+            background-color: rgb(6, 61, 95); /* Dark blue background for footer */
+            text-align: center; /* Center text */
+            margin: 0%; /* Remove margin */
+        }
+    </style>
+</head>
 
+<header>
+    <body style="background-color: rgb(255, 255, 255);"> <!-- White background for the body -->
+        <div class="Title">
+            <h1 style="text-align: center; margin: 0%; font-weight: 900;">Fishy Time</h1> <!-- Main title of the webpage -->
+        </div>
+        <div class="Other">
+            <h2 style="text-align: center; margin: 0%; color: white">The not very complete comprehensive guide to the basics of fishing in Manitoba.</h2>
+            <!-- Subtitle explaining the site's purpose -->
+            <nav>
+                <a href="index.html" style="color: white">Index</a> <!-- Link to the index page -->
+                <a href="web.html" style="color: white">Fishy Time</a> <!-- Link to the current page -->
+            </nav>
+        </div>
+</header>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19877.491495209746!2d-96.09893752797032!3d50.
-    25230608519081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x529534f571c78491%3A0x9acd19b944f2ed3!2sLac%20
-    du%20Bonnet%2C%20MB!5e1!3m2!1sen!2sca!4v1726761423460!5m2!1sen!2sca" width="600" height="450" style="border:0;"
-    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<main>
+    <section alt="Fish Basics"> <!-- Section providing information about fish -->
+        <table style="width: 100%"> <!-- Main table for displaying fish information -->
+            <tr>
+                <td>
+                    <img src="Pictures/Walleye.jpg" width="600" height="300" style="border: 1px solid black" alt="Picture"> <!-- Image of Walleye -->
+                </td>
+                <td>
+                    <table style="width: 100%"> <!-- Nested table for details about different fish -->
+                        <tr>
+                            <th>Species</th> <!-- Column header for fish species -->
+                            <th>Possession limits</th> <!-- Column header for possession limits -->
+                            <th>Size restrictions</th> <!-- Column header for size restrictions -->
+                            <th>Technique to Catch</th> <!-- Column header for fishing techniques -->
+                        </tr>
+                        <tr>
+                            <td>Walleye (Pickerel) or Sauger</td> <!-- First fish entry -->
+                            <td>4</td> <!-- Possession limit for Walleye -->
+                            <td>none may exceed 55cm</td> <!-- Size restriction for Walleye -->
+                            <td>Trolling and Jigging</td> <!-- Techniques to catch Walleye -->
+                        </tr>
+                        <tr>
+                            <td>Northern Pike (Jackfish)</td> <!-- Second fish entry -->
+                            <td>4</td> <!-- Possession limit for Northern Pike -->
+                            <td>none may exceed 75cm</td> <!-- Size restriction for Northern Pike -->
+                            <td>Spinning and Jigging</td> <!-- Techniques to catch Northern Pike -->
+                        </tr>
+                        <tr>
+                            <td>Yellow Perch</td> <!-- Third fish entry -->
+                            <td>25</td> <!-- Possession limit for Yellow Perch -->
+                            <td>N/A</td> <!-- Size restriction not applicable for Yellow Perch -->
+                            <td>Vertical Jigging</td> <!-- Techniques to catch Yellow Perch -->
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </section>
 
-    <table style="width:50%">
-      <tr>
-        <th>Species</th>
-        <th>Posession limits</th>
-        <th>Size restrictions</th>
-        <th>Envrionments</th>
-      </tr>
-      <tr>
-        <td>Walleye (Pickeral) or Sauger</td>
-        <td>4</td>
-        <td>none may exceed 55cm</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Northen Pike (Jackfish)</td>
-        <td>4</td>
-        <td>none may exceed 75cm</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Yellow Perch</td>
-        <td>25</td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
+    <section alt="Survey"> <!-- Section for user interaction to select favorite fish -->
+        <fieldset form="fav_fish" name="fav_fish"> <!-- Grouping related form elements -->
+            <legend>Favourite Fish</legend> <!-- Legend for the survey fieldset -->
+            <form> <!-- Form for selecting favorite fish -->
+                <input type="radio" id="walleye" name="fav_fish" value="walleye"> <!-- Radio button for Walleye -->
+                <label for="walleye">Walleye</label><br> <!-- Label for Walleye option -->
+                <input type="radio" id="northern_pike" name="fav_fish" value="northern_pike"> <!-- Radio button for Northern Pike -->
+                <label for="northern_pike">Northern Pike</label><br> <!-- Label for Northern Pike option -->
+                <input type="radio" id="yellow_perch" name="fav_fish" value="yellow_perch"> <!-- Radio button for Yellow Perch -->
+                <label for="yellow_perch">Yellow Perch</label> <!-- Label for Yellow Perch option -->
+            </form>
+        </fieldset>
+    </section>
+</main>
 
-    <fieldset form="fav_fish" name="fav_fish">
-      <legend>Favourite Fish</legend>
-      <form>
-        <input type="radio" id="walleye" name="fav_fish" value="walleye">
-        <label for="walleye">Walleye</label><br>
-        <input type="radio" id="northen_pike" name="fav_fish" value="northen_pike">
-        <label for="northen_pike">Northen Pike</label><br>
-        <input type="radio" id="yellow_perch" name="fav_fish" value="yellow_perch">
-        <label for="yellow_perch">Yellow Perch</label>
-  </form>
+<aside alt="More"> <!-- Aside section for additional content -->
+    <!-- YouTube video embedded for related content -->
+    <iframe width="475" height="315" src="https://www.youtube.com/embed/CFTI8TdrNtY?si=zuHpAXDZXFdKCl9r" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
 
-    <img src="Pictures/Walleye.jpg" width="200" height="200" style="border: 1px solid black" alt="Picture">
+    <!-- Additional images related to fishing -->
+    <img src="Pictures/FishWall.gif" width="475" height="315"/> <!-- Image depicting a fish wall -->
+    <img src="Pictures/Perch.jpg" width="475" height="315"/> <!-- Image of a Perch -->
+</aside>
 
-  </body>
+<footer>
+    <div class="Other1" alt="Copyright"> <!-- Copyright section -->
+        <p style="color: white; margin: 0%;">FishyTime&copy; all rights reserved</p> <!-- Copyright notice -->
+    </div>
+</footer>
+
+</body>
 </html>

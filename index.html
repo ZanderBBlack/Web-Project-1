@@ -1,30 +1,107 @@
+<!-- Zander Black -->
+<!-- Web Development 20s -->
+<!-- Ms.Hotink -->
+<!-- Pembina Trails Collegiate (PTC) -->
+<!-- Date Last Modified: 09/24/2024 -->
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
-    <title>Fishy Time Sign in</title>
+    <title>Fishy Time Sign in</title> <!-- Title of the webpage displayed in the browser tab -->
+    <style>
+        /* Styles for the title section */
+        .Title {
+            background-color: rgb(184, 184, 184); /* Light gray background for the title */
+            text-align: center; /* Center the title text */
+            margin: 0%; /* Remove margin to align with other elements */
+        }
+
+        /* Styles for the main content area */
+        .Other {
+            background-color: rgb(6, 61, 95); /* Dark blue background for the main content */
+            text-align: center; /* Center the text within this section */
+            margin: 0%; /* Remove margin */
+        }
+
+        /* Styles for the footer */
+        .Other1 {
+            background-color: rgb(6, 61, 95); /* Dark blue background for the footer */
+            text-align: center; /* Center the footer text */
+            margin: 0%; /* Remove margin */
+        }
+    </style>
 </head>
 
-<body style="background-color: rgb(172, 172, 172);">
-    
-    <h1 style="text-align: center;">Fishy Time</h1>
-    <h2 style="text-align: center;">The not very complete comprehensive guide to the basics of fishing in manitioba.</h2>
-    <video width="700" height="200" autoplay src="Video/istockphoto-1393970615-640_adpp_is.mp4" loop></video>
-    
-    <p>Basics include the following:</p>
-    <ud>
-        <li>Types of Fish</li>
-        <li>Desired Size</li>
-        <li>Best Environments</li>
-    </ud>
-    <form action="web.html" method="get" style="text-align: center;">
-        <h2>Sign In (required):</h2>
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required minlength="5"><br>
-        <label for="pwd">Password:</label><br>
-        <input type="password" id="pwd" name="pwd" required minlength="5" >
-        <input type="Submit" value="Submit">
-    </form>
+<header>
+    <body style="background-color: rgb(255, 255, 255);"> <!-- Set the body's background color to white -->
+        <div class="Title">
+            <h1 style="text-align: center;  margin: 0%;">Fishy Time</h1> <!-- Main title of the webpage -->
+        </div>
+        <div class="Other">
+            <h2 style="text-align: center;  margin: 0%; color:white">The not very complete comprehensive guide to the
+                basics of fishing in
+                Manitoba. <!-- Subtitle providing context about the content -->
+            </h2>
+            <nav>
+                <!-- Navigation links to other pages -->
+                <a href="index.html" style="color:white">Index</a> <!-- Link to the index page -->
+                <a href="web.html" style="color:white">Fishy Time</a> <!-- Link to the current page -->
+            </nav>
+        </div>
+</header>
+
+<main>
+    <table style="width:100%;"> <!-- Table to organize content in two columns -->
+        <tr>
+            <td>
+                <p><b><u>Basics include the following:</u></b></p> <!-- Heading for the list of basics -->
+                <ul>
+                    <li>Species</li> <!-- Types of fish -->
+                    <li>Possession Limits</li> <!-- Legal limits on how many fish can be kept -->
+                    <li>Size Restrictions</li> <!-- Legal size limits for keeping fish -->
+                    <li>Technique to Catch</li> <!-- Methods used for fishing -->
+                </ul>
+            </td>
+            <td>
+                <img src="Pictures/fish-spin.gif" width="300" height="100" alt="Spinning fish animation" /> <!-- Animated image illustrating fishing -->
+            </td>
+        </tr>
+    </table>
+
+    <figure>
+        <figcaption alt="Sign In"> <!-- Caption for the sign-in section -->
+            <fieldset> <!-- Grouping related elements in the form -->
+                <legend>
+                    <h2>Sign In <i>(required):</i></h2> <!-- Legend for the sign-in area -->
+                </legend>
+                <form action="web.html" method="get" style="text-align: center;"> <!-- Form that sends data to web.html -->
+                    <!-- Label for the username input field -->
+                    <label for="username">Username:</label><br>
+                    <!-- Input field for username -->
+                    <input type="text" id="username" name="username" required minlength="5"><br>
+
+                    <!-- Label for the password input field -->
+                    <label for="pwd">Password:</label><br>
+                    <!-- Input field for password -->
+                    <input type="password" id="pwd" name="pwd" required minlength="5">
+
+                    <!-- Submit button represented as an image -->
+                    <input type="image" src="Pictures/ZKZl.gif" alt="Submit" width="30" height="30">
+                </form>
+            </fieldset>
+        </figcaption>
+    </figure>
+</main>
+
+<aside alt="Fishing Pic">
+    <img src="Pictures/Fishing.gif" width="1475" height="275" alt="Fishing animation"> <!-- Image related to fishing -->
+</aside>
+
+<footer>
+    <div class="Other1" alt="Copyright"> <!-- Copyright section -->
+        <p style="color: white; margin: 0%;">FishyTime&copy; all rights reserved</p> <!-- Copyright notice -->
+    </div>
+</footer>
 
 </body>
 
